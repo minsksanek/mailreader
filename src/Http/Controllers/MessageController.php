@@ -443,4 +443,12 @@ class MessageController
     public function getBodies() {
         return $this->bodies;
     }
+
+    /**
+     * Получить дату письма
+     * @return array
+     */
+    public function getDate() {
+        return $this->attributes['date'];
+    }
 }

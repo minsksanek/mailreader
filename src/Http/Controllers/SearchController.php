@@ -166,7 +166,7 @@ class SearchController
             $available_messages_count = $available_messages->count();
             if ($available_messages_count > 0) {
 
-                $available_messages = $available_messages->reverse();
+                //$available_messages = $available_messages->reverse();
                 $query =& $this;
                 $available_messages->each(function($msgno, $msglist) use(&$messages, $query) {
                     //смотрим тело письма и вложения
